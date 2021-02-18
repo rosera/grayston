@@ -1,0 +1,5 @@
+# Function dependencies, for example:
+# package>=version
+Google-cloud-build
+google-cloud-logging
+
