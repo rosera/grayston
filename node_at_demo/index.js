@@ -11,7 +11,7 @@ const cb = new CloudBuildClient();
 const projectId = process.env.PROJECT_ID || 'PRJ_ERROR';
 
 // Process the function
-async function step_one_function() {
+async function step_function() {
 
   // Create a new build object
   const testObject = {
@@ -40,7 +40,7 @@ async function step_one_function() {
 exports.step_1 = (req, res) => {
   let message = req.query.message || req.body.message || 'Activity Tracking: Step 1 Endpoint';
 
-  step_one_function();
+  step_function();
 
   res.status(200).send(message);
 };

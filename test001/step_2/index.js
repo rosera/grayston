@@ -1,6 +1,8 @@
 // Ref: https://cloud.google.com/cloud-build/docs/api/reference/rest/v1/projects.builds#Build
 // Ref: https://www.npmjs.com/package/@google-cloud/cloudbuild
 
+const at_message = 'Activity Tracking: Step 1 Endpoint';
+
 // Imports the Google Cloud client library
 const {CloudBuildClient} = require('@google-cloud/cloudbuild');
  
@@ -38,7 +40,7 @@ async function step_function() {
  * @param {!express:Response} res HTTP response context.
  */
 exports.step_2 = (req, res) => {
-  let message = req.query.message || req.body.message || 'Activity Tracking: Step 1 Endpoint';
+  let message = req.query.message || req.body.message || at_message;
 
   step_function();
 
