@@ -20,7 +20,7 @@ async function step_function() {
     steps: [
       {
         "name": "gcr.io/google.com/cloudsdktool/cloud-sdk",
-        "args": ["gcloud", "logging", "write", "grayston_log", "'{"owner": "Rich Rose", "message": "Hello" }'"],
+        "args": ["gcloud", "logging", "write", "grayston_log", '{"owner": "Rich Rose", "message": "Hello" }'],
       },
     ]
   }
