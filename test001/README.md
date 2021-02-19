@@ -5,6 +5,8 @@
 - [x] PROJECT_ID 
 
 
+
+## Deploy the Cloud Function
 ```
 gcloud functions deploy [STEP] --set-env-vars PROJECT_ID=$GOOGLE_CLOUD_PROJECT --runtime nodejs12 --trigger-http --allow-unauthenticated
 ```
